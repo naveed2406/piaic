@@ -1,4 +1,3 @@
-"use strict";
 var __assign = (this && this.__assign) || function () {
     __assign = Object.assign || function(t) {
         for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -19,7 +18,6 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     }
     return to.concat(ar || Array.prototype.slice.call(from));
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 //Question 2
 console.log("\nQ2: Personal Message\n");
 var personName = "naVeed";
@@ -139,8 +137,9 @@ friends = ["Waqas", "Zaheer", "Sufyan", "Naseem", "Asim"];
 console.log("Total friends inviting to a dinner are ".concat(friends.length));
 //Question 20
 console.log("\nQ20: List of Famous Rivers:\n");
-var rivers = ["Jahelum", "Chenab", "satluj", "Sindh", "Ravi"];
-console.log("".concat(rivers.join(', ')));
+var lists = [["Jahelum", "Chenab", "satluj", "Sindh", "Ravi"],
+    ["Pakistan", "India", "Indonesia", "China", "SriLanka"],
+    ["Rawalpindi", "Karachi", "Taxila", "Multan", "Lahore"]];
 //Question 21
 console.log("\nQ21: Information about Countries:\n");
 var countriesInfo = [
@@ -185,26 +184,11 @@ var city2 = 'Lahore';
 var city3 = 'Rawalpindi';
 var city4 = 'Multan';
 var city5 = 'Noshera';
-console.log("city1 == 'Karachi'? I predict True.");
-console.log(city1 == 'Karachi');
-console.log("city2 == 'Lahore'? I predict True.");
-console.log(city2 == 'Lahore');
-console.log("city3 == 'Rawalpindi'? I predict True.");
-console.log(city3 == 'Rawalpindi');
-console.log("city4 == 'Multan'? I predict True.");
-console.log(city4 == 'Multan');
-console.log("city5 == 'Noshera'? I predict True.");
-console.log(city5 == 'Noshera');
-console.log("city1 == 'Lahore'? I predict True.");
-console.log(city1 == 'Lahore');
-console.log("city2 == 'Karachi'? I predict True.");
-console.log(city2 == 'Karachi');
-console.log("city3 == 'Peshawar'? I predict True.");
-console.log(city3 == 'Peshawar');
-console.log("city4 == 'Noshera'? I predict True.");
-console.log(city4 == 'Noshera');
-console.log("city5 == 'Multan'? I predict True.");
-console.log(city5 == 'Multan');
+console.log(city1 == 'Karachi' ? "I predict True." : "Your prediction is wrong");
+console.log(city2 == 'Lahore' ? "I predict True." : "Your prediction is wrong");
+console.log(city3 == 'Rawalpindi' ? "I predict True." : "Your prediction is wrong");
+console.log(city4 == 'Noshera' ? "I predict True." : "Your prediction is wrong");
+console.log(city4 == 'Multan' ? "I predict True." : "Your prediction is wrong");
 //Question 24
 console.log("\nQ24: Multiple equality and inequality\n");
 var string1 = "Karachi";
@@ -479,10 +463,10 @@ function createCar(manufacturer, modelName, options) {
     return carInfo;
 }
 // Call the function with required information and additional properties
-var car = createCar("Toyota", "Camry", {
+/*
+const car = createCar("Toyota", "Camry", {
     color: "Silver",
     year: 2022,
     features: ["Navigation", "Sunroof"]
 });
-// Print the object to verify the information
-console.log(car);
+*/ 

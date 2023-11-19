@@ -1,4 +1,3 @@
-export {}
 //Question 2
 console.log("\nQ2: Personal Message\n");
 let personName: string = "naVeed";
@@ -39,6 +38,7 @@ console.log(10-2);
 console.log(4*2);
 // Division
 console.log(16/2);
+
 
 //Question 9
 console.log("\nQ9: Favorite Number\n")
@@ -135,8 +135,9 @@ console.log(`Total friends inviting to a dinner are ${friends.length}`);
 
 //Question 20
 console.log("\nQ20: List of Famous Rivers:\n");
-let rivers: string[] = ["Jahelum","Chenab","satluj","Sindh","Ravi"];
-console.log(`${rivers.join(', ')}`);
+let lists: Array<Array<string>> = [["Jahelum","Chenab","satluj","Sindh","Ravi"],
+					["Pakistan", "India", "Indonesia", "China", "SriLanka"],
+					["Rawalpindi", "Karachi", "Taxila", "Multan", "Lahore"]];
 
 //Question 21
 console.log("\nQ21: Information about Countries:\n");
@@ -183,27 +184,11 @@ let city2 = 'Lahore';
 let city3 = 'Rawalpindi';
 let city4 = 'Multan';
 let city5 = 'Noshera';
-console.log("city1 == 'Karachi'? I predict True.");
-console.log(city1 == 'Karachi');
-console.log("city2 == 'Lahore'? I predict True.");
-console.log(city2 == 'Lahore');
-console.log("city3 == 'Rawalpindi'? I predict True.");
-console.log(city3 == 'Rawalpindi');
-console.log("city4 == 'Multan'? I predict True.");
-console.log(city4 == 'Multan');
-console.log("city5 == 'Noshera'? I predict True.");
-console.log(city5 == 'Noshera');
-
-console.log("city1 == 'Lahore'? I predict True.");
-console.log(city1 == 'Lahore');
-console.log("city2 == 'Karachi'? I predict True.");
-console.log(city2 == 'Karachi');
-console.log("city3 == 'Peshawar'? I predict True.");
-console.log(city3 == 'Peshawar');
-console.log("city4 == 'Noshera'? I predict True.");
-console.log(city4 == 'Noshera');
-console.log("city5 == 'Multan'? I predict True.");
-console.log(city5 == 'Multan');
+console.log(city1 == 'Karachi'? "I predict True.":"Your prediction is wrong");
+console.log(city2 == 'Lahore'? "I predict True.":"Your prediction is wrong");
+console.log(city3 == 'Rawalpindi'? "I predict True.":"Your prediction is wrong");
+console.log(city4 == 'Noshera'? "I predict True.":"Your prediction is wrong");
+console.log(city4 == 'Multan'? "I predict True.":"Your prediction is wrong");
 
 //Question 24
 console.log("\nQ24: Multiple equality and inequality\n");
@@ -495,12 +480,12 @@ function createCar(manufacturer: string, modelName: string, options: Record<stri
     return carInfo;
 }
 
+
 // Call the function with required information and additional properties
+/*
 const car = createCar("Toyota", "Camry", {
     color: "Silver",
     year: 2022,
     features: ["Navigation", "Sunroof"]
 });
-
-// Print the object to verify the information
-console.log(car);
+*/

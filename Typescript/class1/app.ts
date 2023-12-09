@@ -1,3 +1,4 @@
+/*
 //Question 2
 console.log("\nQ2: Personal Message\n");
 let personName: string = "naVeed";
@@ -482,10 +483,34 @@ function createCar(manufacturer: string, modelName: string, options: Record<stri
 
 
 // Call the function with required information and additional properties
-/*
+
 const car = createCar("Toyota", "Camry", {
     color: "Silver",
     year: 2022,
     features: ["Navigation", "Sunroof"]
 });
 */
+/*Class 4*/
+
+import inquirer from "inquirer";
+let answers = await inquirer.prompt([{
+    name: "age",
+    type: "number",
+    message: "Enter your age:"}
+]);
+console.log("InshAllah, in "+ (60-answers.age) + " years you will be 60 years old");
+
+/*Simple Function*/
+function sum1(x:number,y:number):number{
+    return x+y;
+}
+console.log(sum1(3,3));
+/*Arrow function
+let variable_name=(param :string)=>{
+
+}
+*/
+let sum =(x:number,y:number):number=>{
+    return x+y;
+}
+console.log(sum(3,5));
